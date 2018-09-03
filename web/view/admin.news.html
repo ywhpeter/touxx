@@ -1,0 +1,49 @@
+<?php include '../web/view/admin.header.html';?>
+<span>新闻</span>
+<table class="table table-centered mb-0">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>dsc</th>
+        <th>content</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <?php foreach ($row as $k=>$v){?>
+    <tr data-id="<?php echo $v['id']?>">
+        <td ><?php echo $v['id']?></td>
+        <td><input  data-type="title" class="form-control" type="text" value="<?php echo $v['title']?>"></td>
+        <td><input data-type="dsc" class="form-control" type="text" value="<?php echo $v['dsc']?>"></td>
+        <td><input data-type="content" class="form-control" type="text" value="<?php echo $v['content']?>"></td>
+        <td><button class="remove ">删除</button></td>
+    </tr>
+
+    <?php } ?>
+    </tbody>
+</table>
+
+<button type="button" id='adda' class="btn btn-primary btn-rounded">新建</button>
+
+<div id='spinner' class="spinner" style="display:none">
+    <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+</div>
+<?php include '../web/view/admin.footer.html';?>

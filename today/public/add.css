@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 0.88rem;
+    background: #D43D3D;
+    padding: 0 0.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .return {
+    width: 5%;
+    height: 0.88rem;
+}
+
+.container .return i {
+    line-height: 0.88rem;
+    font-size: 0.38rem;
+    color: #fff;
+}
+
+.container .you-want {
+    width: 95%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.del{
+    margin-top: 0.88rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem 0.3rem;
+}
+.del .click{
+    width: 100%;
+    height:0.48rem;
+}
+.del ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.del  ul li{
+    width:25%;
+    height:0.48rem;
+    padding:0 0.2rem;
+}
+.del  ul li a{
+    display: block;
+    color:#333;
+    background: #F0F0F0;
+    text-align: center;
+    height: 0.48rem;
+    line-height:0.48rem;
+    border: 0.01rem solid #999;
+    border-radius: 0.05rem;
+
+}
+.add{
+
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem 0.3rem;
+}
+.add .cli{
+    width: 100%;
+    height:0.48rem;
+}
+.add ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.add ul li{
+    width:25%;
+    height:0.48rem;
+    padding:0 0.2rem;
+}
+.add ul li a{
+    display: block;
+    color:#333;
+    background: #F0F0F0;
+    text-align: center;
+    height: 0.48rem;
+    line-height:0.48rem;
+    border: 0.01rem solid #999;
+    border-radius: 0.05rem;
+}
+
